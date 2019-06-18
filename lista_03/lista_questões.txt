@@ -56,3 +56,5 @@
 1
 
 16. Receba um número do usuário e informe quais números são primos. O número digitado pelo usário será o intervalo a ser testado. Exemplo: se o usuário informar o número 15, o programa deverá informar quais números entre 1 e 15 são primos.
+
+17. Crie um programa que receba um valor que o usuário deseja sacar e informe a quantidade de notas dadas como saídas. Exemplo: se o usuário deseja sacar R$155, serão dadas como saídas uma nota de R$100, uma nota de R$50 e outra nota de R$5.
