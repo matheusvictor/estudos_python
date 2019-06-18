@@ -54,3 +54,5 @@
 1 2 3 
 1 2 
 1
+
+16. Receba um número do usuário e informe quais números são primos. O número digitado pelo usário será o intervalo a ser testado. Exemplo: se o usuário informar o número 15, o programa deverá informar quais números entre 1 e 15 são primos.
