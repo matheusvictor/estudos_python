@@ -20,16 +20,18 @@ if(resto >= 10):
     notaDez = resto / 10
     resto = resto % 10
 
-if(resto >= 5):
-    notaCinco = resto / 5
-    resto = resto % 5
+# verifica se o número é ímpar
+if(resto % 2 != 0):
+    # caso seja ímpar, verifica se o valor é divisível por 5
+    if(resto >= 5):
+        notaCinco = resto / 5
+        resto = resto % 5
 
-if(resto >= 2):
-    notaDois = resto / 2
-    resto = resto % 2
+# verifica se o número é par
+if(resto % 2 == 0):
+    # caso seja par, verifica se o valor é divisível por 2
+    if(resto >= 2):
+        notaDois = resto / 2
+        resto = resto % 2
 
-if(resto >= 1):
-    notaUm = resto / 1
-    resto = resto % 1
-
-print "\nValor sacado: R$", saque, "\n", notaCem, "nota(s) de R$ 100", "\n", notaCinq, "nota(s) de R$ 50", "\n", notaVinte, "nota(s) de R$ 20", "\n", notaDez, "nota(s) de R$ 10", "\n", notaCinco, "nota(s) de R$ 5", "\n", notaDois, "nota(s) de R$ 2", "\n", notaUm, "nota(s) de R$ 1"
+print "\nValor sacado: R$", saque, "\nSaída:\n", notaCem, "nota(s) de R$ 100", "\n", notaCinq, "nota(s) de R$ 50", "\n", notaVinte, "nota(s) de R$ 20", "\n", notaDez, "nota(s) de R$ 10", "\n", notaCinco, "nota(s) de R$ 5", "\n", notaDois, "nota(s) de R$ 2"
