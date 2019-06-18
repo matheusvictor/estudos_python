@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-limite = input("Digite a qtd de números a ser verificada se é ou não um número primo:\n")
+limite = int(input("Digite a qtd de números a ser verificada se é ou não um número primo:\n"))
 
 # O zero não será considerado. Por isso, precisamos utilizar (limite+1) para que a contagem
 # seja feita de 1 até o número digitado pelo usuário
