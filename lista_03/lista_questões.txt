@@ -58,3 +58,16 @@
 16. Receba um número do usuário e informe quais números são primos. O número digitado pelo usário será o intervalo a ser testado. Exemplo: se o usuário informar o número 15, o programa deverá informar quais números entre 1 e 15 são primos.
 
 17. Crie um programa que receba um valor que o usuário deseja sacar e informe a quantidade de notas dadas como saídas. Exemplo: se o usuário deseja sacar R$155, serão dadas como saídas uma nota de R$100, uma nota de R$50 e outra nota de R$5.
+
+18. Faça um programa que simule o login de acesso a um sistema bancário. Primeiro o sistema deve solicitar ao usuário que digite um login e uma senha para "cadastro". Durante o "cadastro" da senha, o sistema deverá solicitar que o usuário digite a senha e depois digite novamente a senha para confirmar, para garantir que digitou a senha corretamente. Caso as duas senhas de cadastro estejam diferentes, deve-se reiniciar o cadastro das senhas até que elas sejam iguais. A etapa de cadastro deve ser realizada apenas uma vez, no início do programa.
+
+Uma vez realizado o "cadastro", deve-se solicitar do usuário o login e a senha. Caso um dos dois esteja incorreto, deve-se exibir a mensagem de erro adequada (se o erro está no login, na senha ou nos dois). Deve-se permitir tantas tentativas quantas forem necessárias até que o usuário consiga fornecer o login e senha corretamente. Então deverá ser exibida uma mensagem de boas-vindas ao usuário e o seguinte menu:
+
+"Escolha a operação desejada:
+1 - Verificar saldo
+2 - Realizar depósito
+3 - Realizar saque
+4- Logout/Sair"
+
+Considere o saldo inicial R$1.000,00 e após cada operação selecionada, realize a operação aritmética, exiba o saldo atualizado e exiba novamente o menu. Para depósito, solicite o valor a ser depositado. Para saque, solicite o valor a ser sacado. O usuário deverá sempre retornar ao menu após realizar uma das operações.
+Quando solicitar a opção "4 - Logout/Sair" o programa deverá sempre voltar a solicitar login e senha, pronto para permitir um novo acesso ao sistema. Ao fazer logout o valor do saldo deve ser mantido para a próxima atualização, ou seja, se ao fazer logout o saldo era de R$500,00, no próximo login o saldo deve ser também de R$500,00.
