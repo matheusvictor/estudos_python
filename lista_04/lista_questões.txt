@@ -34,3 +34,7 @@ Escreva um programa que leia o número de litros vendidos e o tipo de combustív
 - Ter, no mínimo, 60 anos e ter trabalhado, no mínimo, 25 anos.
 
 Com base nas informações acima, faça um programa que leia: o ano de nascimento e o ano de seu ingresso na empresa. O programa deverá escrever a idade e o tempo de trabalho do empregado e a mensagem "Requerer aposentadoria" ou "Não Requerer".
+
+9. A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas).
+
+10. Uma loja está precisando realizar um levamento de todas as mercadorias em estoque. Escreva um algoritmo que seja capaz de calcular esse valor total Considerando que o usário digitará o valor a cada mercadoria individualmente. Como não se sabe previamente quantas mercadorias existem no estoque, a cada valor digitado deve ser perguntado ao usuário se ele deseja continuar a inserir mais um valor ou não. Ao final, deve-se exibir o valor total, a quantidade de mercadorias e a média de valor das mercadorias em estoque.
