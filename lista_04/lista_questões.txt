@@ -11,3 +11,26 @@
     Estado Civil: 's', 'c', 'v', 'd'; 
 
 Créditos: https://wiki.python.org.br/EstruturaDeRepeticao
+
+4. Faça um algoritmo que receba do usuário dois números e exiba como resposta o resultado da soma do dobro do primeiro com a metade do segundo.
+
+5. Uma família vai realizar uma viagem de natal. Para isso, precisam de um algoritmo que possa calcular quantos litros de gasolina precisam abastecer a cada parada. Para isso, crie um algoritmo que seja capaz de ler a distância a ser percorrida pelo carro e o consumo médio. Calcule e exiba a quantidade de litros necessários para realizar o trajeto.
+
+6. O custo de um computador novo é a soma do custo de fábrica, frete e impostos (aplicados ao custo de fábrica). Considerando que o custo dos impostos é de $&% e o frete seja de 13%, crie um algoritmo que leia o custo de fábrica do computador, Calcule e escreva o custo final ao consumidor.
+
+7. Um posto está vendendo combustíveis com a seguinte tabela de descontos:
+
+"
+Álcool - até 20 litros, desconto de 3% por litro. Acima de 20 litros, desconto de 5% por litro
+Gasolina - até 20 litros, desconto de 4% por litro. Acima de 20 litros, desconto de 6% por litro
+"
+
+Escreva um programa que leia o número de litros vendidos e o tipo de combustível (codificado da seguinte forma: 1 = alcool, 2 = gasolina), Calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$4,30 e o preço do litro do Álcool é R$3,90.
+
+8. Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. Para estar em condições, um dos seguintes requisitos deve ser satisfeito:
+
+- Ter, no mínimo, 65 anos de idade
+- Ter trabalhado, no mínimo, 30 anos
+- Ter, no mínimo, 60 anos e ter trabalhado, no mínimo, 25 anos.
+
+Com base nas informações acima, faça um programa que leia: o ano de nascimento e o ano de seu ingresso na empresa. O programa deverá escrever a idade e o tempo de trabalho do empregado e a mensagem "Requerer aposentadoria" ou "Não Requerer".
