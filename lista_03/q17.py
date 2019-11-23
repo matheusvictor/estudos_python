@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-saque = int(input("Digite o valor que deseja sacar: R$"))
+saque = int(input("Digite o valor que deseja sacar: R$ "))
 resto = saque
 notaCem, notaCinq, notaVinte, notaDez, notaCinco, notaDois, notaUm  = 0, 0, 0, 0, 0, 0, 0
 
@@ -26,12 +26,12 @@ if(resto % 2 != 0):
     if(resto >= 5):
         notaCinco = resto / 5
         resto = resto % 5
-
-# verifica se o número é par
-if(resto % 2 == 0):
     # caso seja par, verifica se o valor é divisível por 2
-    if(resto >= 2):
+    elif(resto >= 2):
         notaDois = resto / 2
         resto = resto % 2
 
-print "\nValor sacado: R$", saque, "\nSaída:\n", notaCem, "nota(s) de R$ 100", "\n", notaCinq, "nota(s) de R$ 50", "\n", notaVinte, "nota(s) de R$ 20", "\n", notaDez, "nota(s) de R$ 10", "\n", notaCinco, "nota(s) de R$ 5", "\n", notaDois, "nota(s) de R$ 2"
+if(resto >= 1):
+    print "Este valor não é sacável, pois necessitaria de, pelo menos, uma nota de R$1."
+else:
+    print "\nValor sacado: R$", saque, "\nSaída:\n", notaCem, "nota(s) de R$ 100", "\n", notaCinq, "nota(s) de R$ 50", "\n", notaVinte, "nota(s) de R$ 20", "\n", notaDez, "nota(s) de R$ 10", "\n", notaCinco, "nota(s) de R$ 5", "\n", notaDois, "nota(s) de R$ 2"
