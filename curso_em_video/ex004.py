@@ -1,0 +1,10 @@
+valorDigitado = input('Digite algo (letra, número, etc) para saber algumas de suas propriedades: ')
+
+print('\nÉ do tipo: {}'.format(type(valorDigitado)))
+print('É um valor alfanúmerico: {}'.format(valorDigitado.isalnum()))
+print('É um valor numérico: {}'.format(valorDigitado.isnumeric()))
+print('É um valor alfabético: {}'.format(valorDigitado.isalpha()))
+print('É um valor em maiúsculo: {}'.format(valorDigitado.isupper()))
+print('É um valor em minúsculo: {}'.format(valorDigitado.islower()))
+print('É um valor em capitalizado: {}'.format(valorDigitado.istitle()))
+print('É um valor em composto apenas por espaços: {}'.format(valorDigitado.isspace()))
