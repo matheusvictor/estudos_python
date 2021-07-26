@@ -1,3 +1,5 @@
-from math import sin, cos, tan, degrees
+import math
 angulo = float(input('Digite um valor de ângulo qualquer: '))
-print(f'O ângulo de {angulo}º tem uma tangente de {tan(angulo)} graus radianos, cosseno de {cos(angulo)} e seno de {sin(angulo)}')
+angulo_radianos = math.radians(angulo)
+print(f'O ângulo de {angulo}º tem tangente de {math.tan(angulo_radianos):.2f}, cosseno de {math.cos(angulo_radianos):.2f} e seno de {math.sin(angulo_radianos):.2f}')
+
