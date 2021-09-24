@@ -1,2 +1,2 @@
-nome = input("Digite o nome de uma pessoa: ")
-print("SILVA" in nome)
+nome = str(input("Digite o nome de uma pessoa: ")).strip()
+print("SILVA" in nome.upper())
