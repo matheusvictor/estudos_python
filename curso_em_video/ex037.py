@@ -10,10 +10,11 @@ if(opcao == 0):
     print('\033[1;31mPrograma encerrado!\033[m')
     exit()
 elif(opcao == 1):
-    print(f'O número {numero} em \033[1;32mBINÁRIO\033[m é igual a: {bin(numero)}')
+    print(f'O número {numero} em \033[1;32mBINÁRIO\033[m é igual a: {bin(numero)[2:]}') # como os dois primeiros dígitos são a representação do sistema convertido
+                                                                                        # (ex.: '0b' para o binário), vamos contabilizar do terceiro em diante
 elif(opcao == 2):
-    print(f'O número {numero} em \033[1;33mOCTAL\033[m é igual a: {oct(numero)}')
+    print(f'O número {numero} em \033[1;33mOCTAL\033[m é igual a: {oct(numero)[2:]}')
 elif(opcao == 3):
-    print(f'O número {numero} em \033[1;34mHEXADECIMAL\033[m é igual a: {hex(numero)}')
+    print(f'O número {numero} em \033[1;34mHEXADECIMAL\033[m é igual a: {hex(numero)[2:]}')
 else:
     print('\033[1;31mOpção inválida!\033[m')
