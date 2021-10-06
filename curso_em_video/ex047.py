@@ -1,3 +1,3 @@
-for numero in range(1,51,2):
-    print(numero+1)
+for numero in range(2,51,2): #reduz na metade o número de repetições
+    print(numero)
     
