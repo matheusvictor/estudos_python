@@ -6,7 +6,7 @@ menor_idade = 0
 for contador in range(0,7):
     ano_nascimento = int(input(f'Digite o ano de nascimento da {contador + 1}ª pessoa: '))
 
-    if(ano_atual - ano_nascimento > 21): #considerando 21 anos como maior idade.
+    if(ano_atual - ano_nascimento >= 21): #considerando 21 anos como maior idade.
         maior_idade += 1
     else:
         menor_idade += 1
