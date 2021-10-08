@@ -1,4 +1,9 @@
-sexo = str(input('Digite o sexo da pessoa [F/M]: ')).strip().upper()
+continua = True
+while(continua):
+    sexo = str(input('Digite o sexo da pessoa: ')).strip().upper()
+    if('M' in sexo or 'F' in sexo):
+        continua = False
+    else:
+        print('Entrada inválida. Tente novamente!', end=' ')
 
-while('M' not in sexo and 'F' not in sexo):
-    sexo = str(input('Entrada inválida. Tente novamente: ')).strip().upper()
+print('Registrado com sucesso!')
