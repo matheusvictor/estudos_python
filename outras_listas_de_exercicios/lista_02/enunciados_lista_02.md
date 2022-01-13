@@ -13,7 +13,7 @@
 6. Ler dois valores (considere que não serão lidos valores iguais) e escrevê-los em ordem crescente.
 
 7. Ler dois valores e imprimir uma das três mensagens a seguir:
-‘Números iguais’, caso os números sejam iguais 
+‘Números iguais’, caso os números sejam iguais
 ‘Primeiro é maior’, caso o primeiro seja maior que o segundo; ‘Segundo maior’, caso o segundo seja maior que o primeiro.
 
 8. Ler 3 valores (considere que não serão informados valores iguais) e escrevê-los em ordem crescente.

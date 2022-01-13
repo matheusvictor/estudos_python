@@ -1,9 +1,9 @@
 # Lista Exercícios – Variáveis, Operadores, Estruturas de Controle e Repetição
 
 
-1. Escreva um programa capaz de ler um número X e mostrar na tela se o numero pertence a um dos seguintes intervalos:- 1<x< 1 ou 20<x<30;
+1. Escreva um programa capaz de ler um número X e mostrar na tela se o numero pertence a um dos seguintes intervalos: `- 1 < x < 1 ou 20 < x < 30`;
 
-2. Escreva um programa capaz de ler um numero X e mostrar na tela se o número não pertence ao seguinte intervalo: 15<x<100;
+2. Escreva um programa capaz de ler um numero X e mostrar na tela se o número não pertence ao seguinte intervalo: `15<x<100`;
 
 3. Escreva um programa capaz de ler 10 números do usuário e imprimir o dobro de cada um deles.
 
@@ -63,11 +63,13 @@
 
 Uma vez realizado o "cadastro", deve-se solicitar do usuário o login e a senha. Caso um dos dois esteja incorreto, deve-se exibir a mensagem de erro adequada (se o erro está no login, na senha ou nos dois). Deve-se permitir tantas tentativas quantas forem necessárias até que o usuário consiga fornecer o login e senha corretamente. Então deverá ser exibida uma mensagem de boas-vindas ao usuário e o seguinte menu:
 
-"Escolha a operação desejada:
+```
+Escolha a operação desejada:
 1 - Verificar saldo
 2 - Realizar depósito
 3 - Realizar saque
-4- Logout/Sair"
+4- Logout/Sair
+```
 
 Considere o saldo inicial R$1.000,00 e após cada operação selecionada, realize a operação aritmética, exiba o saldo atualizado e exiba novamente o menu. Para depósito, solicite o valor a ser depositado. Para saque, solicite o valor a ser sacado. O usuário deverá sempre retornar ao menu após realizar uma das operações.
 Quando solicitar a opção "4 - Logout/Sair" o programa deverá sempre voltar a solicitar login e senha, pronto para permitir um novo acesso ao sistema. Ao fazer logout o valor do saldo deve ser mantido para a próxima atualização, ou seja, se ao fazer logout o saldo era de R$500,00, no próximo login o saldo deve ser também de R$500,00.
