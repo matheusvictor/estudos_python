@@ -20,7 +20,7 @@ Este repositório é dedicado aos exercícios de Python que foram feitos durante
 
 ## [Exercícios do curso de Python 3 do Curso em Vídeo](https://github.com/matheusvictor/estudos_python/tree/master/curso_em_video)
 
-### Mundo 01: iniciando com Python
+### [Mundo 01: iniciando com Python](https://github.com/matheusvictor/estudos_python/blob/master/curso_em_video/mundo_01/enunciados_mundo_01.md)
 
 #### Conhecendo a linguagem
 
@@ -79,7 +79,7 @@ Este repositório é dedicado aos exercícios de Python que foram feitos durante
 
 - [Tabela de cores ANSI](https://github.com/matheusvictor/estudos_python/blob/master/curso_em_video/tabelaCores_ansi.py)
 
-### Mundo 02: estruturas de controle
+### [Mundo 02: estruturas de controle](https://github.com/matheusvictor/estudos_python/blob/master/curso_em_video/mundo_02/enunciados_mundo_02.md)
 
 #### Condições em Python (if..elif)
 
@@ -126,7 +126,7 @@ Este repositório é dedicado aos exercícios de Python que foram feitos durante
 - Exercício Python #070 - [Estatística de produtos](https://github.com/matheusvictor/estudos_python/blob/master/curso_em_video/mundo_02/ex070.py)
 - Exercício Python #071 - [Simulador de caixa eletrônico](https://github.com/matheusvictor/estudos_python/blob/master/curso_em_video/mundo_02/ex071.py)
 
-### Mundo 03: estruturas compostas
+### [Mundo 03: estruturas compostas](https://github.com/matheusvictor/estudos_python/blob/master/curso_em_video/mundo_03/enunciados_mundo_03.md)
 
 #### Tuplas
 
