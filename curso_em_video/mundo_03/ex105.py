@@ -7,16 +7,9 @@ def notas(*pontuacoes, situacao=False):
     """
     boletim = dict()
 
-    maior_nota = menor_nota = pontuacoes[0]
-    for nota in pontuacoes:
-        if nota > maior_nota:
-            maior_nota = nota
-        if nota < menor_nota:
-            menor_nota = nota
-
     boletim['total'] = len(pontuacoes)
-    boletim['maior_nota'] = maior_nota
-    boletim['menor_nota'] = menor_nota
+    boletim['maior_nota'] = max(pontuacoes)
+    boletim['menor_nota'] = min(pontuacoes)
     boletim['média'] = sum(pontuacoes) / len(pontuacoes)
 
     if situacao:
