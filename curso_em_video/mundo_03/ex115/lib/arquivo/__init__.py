@@ -49,7 +49,10 @@ def lerArquivo(nome_arquivo='repositorio.txt'):
     else:
         cabecalho('Pessoas cadastradas')
         if contador_linhas_arquivo() > 0:
-            print(arquivo.read())
+            for linha in arquivo:
+                registro = linha.split(';')
+                registro[1] = registro[1].replace('\n', '')
+                print(f'{registro[0]:<34}{registro[1]:>3} anos')
         else:
             print(cor_texto('Não contém registros no arquivo!', 1))
 
