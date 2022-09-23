@@ -1,44 +1,60 @@
-import data
-
-
 def jogar():
-    print('*' * 40)
+    print('*' * 80)
     print('Boas-vindas ao jogo da forca!'.upper())
-    print('*' * 40)
+    print('*' * 80)
 
     acertou = False
     enforcou = False
     numero_erros = 0
+    quantidade_dicas_disponiveis = 3  # TODO: implementar funcionalidade de dicas
+
     palavra_secreta = 'PYTHON'.strip().upper()
-    palavra_secreta_mascarada = ['_'] * len(palavra_secreta)
+    palavra_secreta_mascarada = ['_' for letra in palavra_secreta]  # compreensão de lista
 
     print(f'\n{palavra_secreta_mascarada}')
-    print(f'Dica: a palavra possui {contar_letras_palavra_secreta(palavra_secreta)} letra(s)!\n')
 
+    palpites_errados = list()
+    palpites_corretos = list()
+    quantidade_palpites_dados = 0
     while not acertou and not enforcou:
 
         palpite = input('Qual seu palpite?: ').strip().upper()
 
-        letras_acertadas = list()
-
         if palpite in palavra_secreta:
-            index = 0
-            for letra in palavra_secreta:
-                if letra == palpite:
-                    letras_acertadas.append(letra)
-                    palavra_secreta_mascarada[index] = palpite
-                index += 1
+            if palpite in palpites_corretos:
+                print(f'Você já usou {palpite} como palpite!')
+            else:
+                index = 0
+                for letra in palavra_secreta:
+                    if palpite == letra:
+                        quantidade_palpites_dados += 1
+                        palpites_corretos.append(letra)
+                        palavra_secreta_mascarada[index] = palpite
+                    index += 1
         else:
-            numero_erros += 1
+            if palpite in palpites_errados:
+                print(f'Você já usou {palpite} como palpite!')
+            else:
+                numero_erros += 1
+                quantidade_palpites_dados += 1
+                palpites_errados.append(palpite)
+                print(f'Você ainda possui {len(palavra_secreta) - numero_erros} chances!')
 
         acertou = '_' not in palavra_secreta_mascarada
         enforcou = numero_erros == len(palavra_secreta)
 
     if acertou:
-        print('Você ganhou'.upper())
+        print('*' * 80)
+        print('Você ganhou!'.upper())
+        print(f'Para acertar a palavra secreta, você utilizou {quantidade_palpites_dados} '
+              f'palpites (desconsiderando palpites repetidos)')
     else:
-        print('Você perdeu'.upper())
-    print('Fim de jogo'.upper())
+        print('*' * 80)
+        print('Você perdeu!'.upper())
+
+    print('*' * 80)
+    print('Fim de jogo!'.upper())
+    print('*' * 80)
 
 
 def gerar_palavra_secreta():
