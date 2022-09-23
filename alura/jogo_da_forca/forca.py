@@ -1,3 +1,8 @@
+from random import randrange
+
+import unidecode
+
+
 def jogar():
     print('*' * 80)
     print('Boas-vindas ao jogo da forca!'.upper())
@@ -8,15 +13,15 @@ def jogar():
     numero_erros = 0
     quantidade_dicas_disponiveis = 3  # TODO: implementar funcionalidade de dicas
 
-    palavra_secreta = 'PYTHON'.strip().upper()
+    palavra_secreta = gerar_palavra_secreta()
     palavra_secreta_mascarada = ['_' for letra in palavra_secreta]  # compreensão de lista
-
-    print(f'\n{palavra_secreta_mascarada}')
 
     palpites_errados = list()
     palpites_corretos = list()
     quantidade_palpites_dados = 0
     while not acertou and not enforcou:
+
+        print(f'\n{palavra_secreta_mascarada}')
 
         palpite = input('Qual seu palpite?: ').strip().upper()
 
@@ -58,18 +63,26 @@ def jogar():
 
 
 def gerar_palavra_secreta():
-    # TODO
-    pass
+    arquivo = open(file='./data/banco_de_palavras.txt', mode='r', encoding='utf-8')
+    palavras = []
+
+    for linha in arquivo:
+        palavras.append(linha.strip().upper())
+
+    arquivo.close()
+
+    indice_randomico_palavra = randrange(start=0, stop=len(palavras))
+
+    return unidecode.unidecode(palavras[indice_randomico_palavra])
 
 
-def transformar_palavra_em_minusculas():
-    # TODO
-    pass
+def cadastrar_nova_palavra():
+    arquivo = open(file='./data/banco_de_palavras.txt', mode='a', encoding='utf-8')
+    nova_palavra = input('Digite uma nova palavra para cadastrar na base de dados: ')
 
-
-def transformar_palavra_em_maiusculas():
-    pass
-
-
-def contar_letras_palavra_secreta(palavra):
-    return len(palavra)
+    try:
+        arquivo.write(nova_palavra)
+        print('Nova palavra salva com sucesso!')
+    except:
+        print('Erro ao tentar gravar palavra na base de dados...')
+    arquivo.close()
