@@ -1,6 +1,6 @@
 class ProgramaTV:
     def __init__(self, nome, ano):
-        self.__nome = nome.tile()
+        self.__nome = nome.title()
         self.__ano = ano
         self.__likes = 0
 
@@ -18,3 +18,6 @@ class ProgramaTV:
 
     def dar_likes(self):
         self.__likes += 1
+
+    def __str__(self):
+        return f'{self.__dict__.values()}'.strip('dict_values()')
