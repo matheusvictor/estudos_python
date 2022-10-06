@@ -37,7 +37,9 @@ processos seletivos.
   </a>
 </p>
 
-## [Desafios da etapa individual do programa de estágio CI&T Next Gen 2022](https://github.com/matheusvictor/estudos_python/tree/master/ciandt_next_gen_2022)
+## [Exercícios de cursos da Alura](https://github.com/matheusvictor/estudos_python/tree/master/alura)
+
+## [Desafios da etapa individual do programa de estágio C&T Next Gen 2022](https://github.com/matheusvictor/estudos_python/tree/master/ciandt_next_gen_2022)
 
 #### [Enunciados dos desafios](https://github.com/matheusvictor/estudos_python/blob/master/ciandt_next_gen_2022/descri%C3%A7%C3%A3o_dos_desafios)
 
